@@ -111,7 +111,7 @@ do
                         cd /tmp
 			echo -e $prc
 			wget -q -nv ${url}${sv} && unzip -qq ${conf}${sv}
-                        /usr/sbin/openvpn /tmp/vpnbook-euro2-tcp443.ovpn --auth-user-pass $AUTH
+                        /usr/sbin/openvpn --config /tmp/vpnbook-euro2-tcp443.ovpn --auth-user-pass $AUTH
                         break
                         ;;
                 "GERMANY")
@@ -120,7 +120,7 @@ do
                         cd /tmp
 			echo -e $prc
 			wget -q -nv ${url}${sv} && unzip -qq ${conf}${sv}
-                        /usr/sbin/openvpn /tmp/vpnbook-de233-tcp443.ovpn --auth-user-pass $AUTH
+                        /usr/sbin/openvpn --config /tmp/vpnbook-de233-tcp443.ovpn --auth-user-pass $AUTH
                         break
                         ;;
                 "Quit")
